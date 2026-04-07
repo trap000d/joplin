@@ -12,6 +12,9 @@
         "48": "icons/48.png",
         "96": "icons/96.png"
     },
+    "options_ui": {
+        "page": "util/options.html"
+    },
     "permissions": [
         "activeTab",
         "tabs",
