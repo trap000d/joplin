@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="color-scheme" content="dark light">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="dark light">
+</head>
+<script src="options.js"></script>
 
 <body>
-  <p>storage.managed color: <b id="managed-color">no value found</b></p>
-  <form>
-      <label for="color">Favourite color</label>
-      <input type="text" id="color">
-      <button type="submit">Save</button>
-  </form>
-  <script src="options.js"></script>
-</body>
+<form id="options">
+<div id="advanced_configuration">
+  <input type="checkbox" id="opt.EnableCustomPort">
+  <label for="opt.EnableCustomPort">Configure Clipper Port Manually</label>
+  <label for="opt.CustomPortNumber">Web Clipper Port</label>
+  <input type="text" id="opt.CustomPortNumber" placeholder="41184">
+</div>
 
+<div id="actionsWrapper">
+  <input type="submit" accesskey="S" value="Save">
+  <input id="reset" type="button" accesskey="R" value="Reset to default">
+</div>
+</form>
+</body>
 </html>
